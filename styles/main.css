@@ -1,0 +1,211 @@
+@import url(http://fonts.googleapis.com/css?family=Permanent+Marker);
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt);
+@import url(http://fonts.googleapis.com/css?family=Walter+Turncoat|Architects+Daughter);
+@import url(http://fonts.googleapis.com/css?family=BenchNine);
+* {
+  margin:0;
+  padding:0;
+}
+body {
+  font-family: Source Sans Pro; 
+}
+.corps {
+  width: 960px;
+  margin: auto;
+  background-color: #FFFFFF;
+  background-repeat: repeat-x;
+  box-shadow: 0 8px 12px #000;
+  background-image: linear-gradient(bottom, #D6D6D6 0%, #FFFFFF 50%);
+  background-image: -o-linear-gradient(bottom, #D6D6D6 0%, #FFFFFF 50%);
+  background-image: -moz-linear-gradient(bottom, #D6D6D6 0%, #FFFFFF 50%);
+  background-image: -webkit-linear-gradient(bottom, #D6D6D6 0%, #FFFFFF 50%);
+  background-image: -ms-linear-gradient(bottom, #D6D6D6 0%, #FFFFFF 50%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #D6D6D6), color-stop(0.5, #FFFFFF));
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF',
+endColorstr='#D6D6D6', GradientType=0);
+}
+.top {
+  width: 100%;
+  font-family: Verdana,Geneva,sans-serif;
+  font-size: 0.8em;
+  text-align: center;
+  background-color: #a60000;
+  background-repeat: repeat-x;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(bottom, #B00202 44%, #FF0000 100%);
+    background-image: -o-linear-gradient(bottom, #B00202 44%, #FF0000 100%);
+    background-image: -moz-linear-gradient(bottom, #B00202 44%, #FF0000 100%);
+    background-image: -webkit-linear-gradient(bottom, #B00202 44%, #FF0000 100%);
+    background-image: -ms-linear-gradient(bottom, #B00202 44%, #FF0000 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, #B00202), color-stop(1, #FF0000));
+    filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF0000',
+  endColorstr='#B00202', GradientType=0);
+}
+.top .text {
+  color: #ffffff;
+  display: inline-block;
+}
+.top .tel {
+  display: inline-block;
+  padding: 1px 3px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #a60000;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ffffff;
+  border-radius:8px;
+}
+header {
+  font-family: artifika;
+  /*display:inline-block;*/
+}
+
+.col1 {
+  width:210px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+  text-align: center;
+}
+.col2 {
+  width:700px;
+  float: left;
+}
+img.header {
+  /*max-width: 98%;*/
+  float: left;
+  margin-right: 10px;
+  /*margin-bottom: 10px;*/
+}
+h1.header {
+  font-size: 2em;
+  color: #a60000;
+  /*padding-bottom: 5%;*/
+}
+h2.header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+  color: #ffffff;
+  text-align: center;
+  background-color: #a60000;
+  float: left;
+  width: 100%;
+}
+nav {
+  /*width: 100%;*/
+  clear:both;
+  text-align: center;
+  padding-top: 20px;
+  margin-left: 20px;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  display:inline-block;
+}
+nav li a {
+  margin: 2rem;
+  padding-bottom: 0;
+  text-decoration: none;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 32px;
+  line-height: 21px;
+  color: #181818;
+  margin-right: 15px;
+}
+nav li a:hover {
+  border-bottom: 3px solid #a60000;
+  color: #a60000;
+  margin-right: 15px;
+}
+nav a.selected {
+  color: #A60000;
+  /*font-weight:600;*/
+}
+nav a.selected:hover {
+  border-bottom: none;
+}
+nav li .langues:hover {
+  border: 0;
+  margin-right: 2px;
+}
+nav li .langues {
+  margin-right: 2px;
+  margin-top: 28px;
+}
+.langues img {
+  width: 20px;
+  height: 13px;
+  margin-right: 2px;
+}
+.langues a {
+  text-decoration: none;
+}
+.separateur {
+  clear: both;
+  border:  none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #269926;
+  height: 2px;
+}
+#corps {
+  padding-bottom: 30px;
+}
+
+
+.align-left {
+  float: left;
+  margin-right:10px;
+}
+.align-right {
+  float: right;
+  margin-right:10px;
+}
+.align-center {
+  margin: auto;
+}
+.justify {
+  text-align: justify;
+}
+.center {
+  text-align: center;
+}
+.medium {
+  width:300px;
+}
+.big {
+  width:460px;
+}
+.super-big {
+  width: 600px;
+}
+.new-line {
+  clear: both;
+}
+footer {
+  clear: both;
+  width: 960px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 960px;
+  color: #6d6c6c;
+  text-align: center;
+}
+footer ul {
+  list-style-type: none;
+}
+footer li {
+  display: inline-block;
+  margin-right: 40px;
+}
+footer img {
+  max-width: 64px;
+}
