@@ -7,9 +7,12 @@
 .icol2 {
   width: 620px
 }
-.w300 {
-  width: 300px;
+.w298 {
+  width: 298px;
 }
-.w620 {
-  width: 620px;
+.w618 {
+  width: 618px;
+}
+section img {
+  margin:10px;
 }

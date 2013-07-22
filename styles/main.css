@@ -10,7 +10,7 @@ body {
   font-family: Source Sans Pro; 
 }
 .corps {
-  width: 960px;
+  width: 962px;
   margin: auto;
   background-color: #FFFFFF;
   background-repeat: repeat-x;
@@ -27,7 +27,7 @@ endColorstr='#D6D6D6', GradientType=0);
 .top {
   width: 100%;
   font-family: Verdana,Geneva,sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: center;
   background-color: #a60000;
   background-repeat: repeat-x;
@@ -188,6 +188,7 @@ nav li .langues {
 }
 .new-line {
   clear: both;
+  /*float: none;*/
 }
 footer {
   clear: both;
