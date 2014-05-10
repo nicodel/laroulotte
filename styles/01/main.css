@@ -45,6 +45,7 @@ endColorstr='#D6D6D6', GradientType=0);
 .top .text {
   color: #ffffff;
   display: inline-block;
+  font-weight: bold;
 }
 .top .tel {
   display: inline-block;
