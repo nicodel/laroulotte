@@ -37,17 +37,18 @@ article {
 }
 .menus h1 {
   color:#269926;
-  font-size:1.1em;
+  font-size:1.3rem;
 }
 .menus h2 {
-  font-size:0.9em;
-  font-weight:600;
+  font-size: 1.1rem;
 }
 .menu {
-  width: 450px;
+  /*width: 450px;*/
+  width: 75%;
   padding:10px;
   margin:5px;
   float:left;
+  min-width: 100px;
 }
 .plat {
   position: relative;
@@ -61,24 +62,30 @@ article {
   right: 0;
 }
 .menu .nom {
-  font-size:1em;
+  font-size:1.1rem;
   color:#FE0000;
   float:left;
   position:relative;
 }
 .menu .ingredients {
-  font-size:0.9em;
+  font-size:1rem;
   text-align:left;
   white-space:normal;
   border-bottom:1px solid #bcbcbc;
   padding-bottom: 2px;
 }
 .menu .prix {
-  font-size:0.8em;
+  font-size: 1.1rem;
   position:relative;
   font-weight: bold;
 }
 
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
   </style>
 
@@ -91,12 +98,12 @@ article {
       <h2>(Base sauce tomate)</h2>
       <div class="plat">
         <!-- <div class="filler"></div> -->
-        <span class="nom">Margherita :</span>
+        <span class="nom truncate">MargheritaMargheritaMargherita :</span>
         <span class="prix">7,50 €</span>
         <div class="ingredients">tomate, mozzarella, origan</div>
       </div>
       <div class="plat">
-        <span class="nom">Regina :</span>
+        <span class="nom truncate">Regina :</span>
         <span class="prix">8,50 €</span>
         <div class="ingredients">tomate, mozzarella, jambon, champignons, origan</div>
       </div>

@@ -28,7 +28,7 @@ article {
 .top .text, .top .titre {
   color: #ffffff;
   display: inline-block;
-  font-weight: bold;
+  /*font-weight: bold;*/
 }
 .top .tel {
 /*  font-family: 'Maven Pro', sans-serif;
@@ -72,10 +72,9 @@ img.panoramik {
   display: none;
 }
 
-h1.header {
+/*h1.header {
   font-size: 2em;
   color: #a60000;
-  /*padding-bottom: 5%;*/
 }
 h2.header {
   padding-top: 5px;
@@ -86,7 +85,7 @@ h2.header {
   background-color: #a60000;
   float: left;
   width: 100%;
-}
+}*/
 
 hr.separateur {
   clear: both;
@@ -154,24 +153,24 @@ section a.back-top {
 }
 .menus h1 {
   color:#269926;
-  font-size:1.1em;
+  font-size:1.3rem;
 }
 .menus h2 {
-  font-size:0.9em;
-  font-weight:600;
+  font-size: 1.1rem;
 }
 .menu {
-  width: 450px;
+  /*width: 450px;*/
+  width: 46%;
   padding:10px;
   margin:5px;
   float:left;
+  min-width: 351px;
 }
 .plat {
   position: relative;
   text-align: right;
   white-space: nowrap;
   padding-top: 6px;
-  border: 1px solid red;
 }
 .menu .filler {
   position: absolute;
@@ -179,25 +178,22 @@ section a.back-top {
   right: 0;
 }
 .menu .nom {
-  font-size:1em;
+  font-size:1.1rem;
   color:#FE0000;
   float:left;
   position:relative;
-  border: 1px solid red;
 }
 .menu .ingredients {
-  font-size:0.9em;
+  font-size:1rem;
   text-align:left;
   white-space:normal;
   border-bottom:1px solid #bcbcbc;
   padding-bottom: 2px;
-  border: 1px solid red;
 }
 .menu .prix {
-  font-size:0.8em;
+  font-size: 1.1rem;
   position:relative;
   font-weight: bold;
-  border: 1px solid red;
 }
 
 
@@ -229,7 +225,6 @@ footer img {
 
 
 
-
 @media (max-width: 1024px) {
   header .sub-header {
 /*    width: 95%;
@@ -255,6 +250,23 @@ footer img {
   }
 }
 
+@media (max-width: 900px) {
+/*  .menus h1 {
+    font-size:1.1rem;
+  }
+  .menus h2 {
+    font-size: 0.9rem;
+  }*/
+  .menu .nom {
+    font-size: 1rem;
+  }
+/*  .menu .ingredients {
+    font-size:0.8rem;
+  }
+  .menu .prix {
+    font-size: 0.9rem;
+  }*/
+}
 
 
 
