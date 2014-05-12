@@ -79,6 +79,9 @@ img.header {
   float: left;
   margin-right: 10px;
   /*margin-bottom: 10px;*/
+  box-shadow: inset 0px 0px 20px 10px #FFFFFF;
+  -moz-box-shadow: inset 0px 0px 20px 10px #FFFFFF;
+  -webkit-box-shadow: inset 0px 0px 20px 10px #FFFFFF;
 }
 h1.header {
   font-size: 2em;
