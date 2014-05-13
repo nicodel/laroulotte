@@ -5,7 +5,7 @@
 @import url(http://fonts.googleapis.com/css?family=Maven+Pro);
 
 body {
-  font-family: Source Sans Pro;
+  font-family: 'Maven Pro', Source Sans Pro, sans-serif;
 }
 
 p,
@@ -13,6 +13,7 @@ article {
   font-family: 'Maven Pro', sans-serif;
   font-size: 1.3rem;
 }
+
 
 .top {
   /*font-family: Verdana,Geneva,sans-serif;*/
@@ -108,34 +109,18 @@ hr.separateur.thick {
 nav {
   display: none;
 }
-/*nav {
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-left: 20px;
-}
-nav ul {
-  list-style-type: none;
-}
-nav li {
-  display:inline-block;
-}
-nav li a {
-  text-decoration: none;
-  font-family: 'BenchNine',sans-serif;
-  font-size: 2.5rem;
-  margin: 2rem;
-}*/
 
-section article,
-section .menus {
+section article {
   max-width: 960px;
   margin: auto;
   padding: 20px;
   text-align: justify;
 }
-section a.back-top {
-  text-align: right;
+section h1 {
+  font-size: 2.5rem;
+  color: #A60000;
+  text-align: center;
+  padding-top: 20px;
 }
 
 #home {
@@ -148,6 +133,10 @@ section a.back-top {
 #menus {
   background: none repeat scroll 0% 0% #ffffff;
 }
+.menus {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .menus h1, .menus h2 {
   display:inline-block;
 }
@@ -159,11 +148,7 @@ section a.back-top {
   font-size: 1.1rem;
 }
 .menu {
-  /*width: 450px;*/
   width: 46%;
-  padding:10px;
-  margin:5px;
-  float:left;
   min-width: 351px;
 }
 .plat {
@@ -171,11 +156,6 @@ section a.back-top {
   text-align: right;
   white-space: nowrap;
   padding-top: 6px;
-}
-.menu .filler {
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 .menu .nom {
   font-size:1.1rem;
@@ -195,11 +175,6 @@ section a.back-top {
   position:relative;
   font-weight: bold;
 }
-
-
-
-
-
 
 footer {
   clear: both;
@@ -257,9 +232,9 @@ footer img {
   .menus h2 {
     font-size: 0.9rem;
   }*/
-  .menu .nom {
+/*  .menu .nom {
     font-size: 1rem;
-  }
+  }*/
 /*  .menu .ingredients {
     font-size:0.8rem;
   }
@@ -286,19 +261,33 @@ footer img {
   header .logo img {
     height: 70px;
   }
-  nav.small {
-    display: inline-block;
+
+  .menu.align-left,
+  .menu.align-right {
+    float: none;
+    text-align: center;
+    width: 100%;
   }
-  nav.small ul {
-  list-style-type: none;
+  .menus h1 {
+    font-size: 1.7rem;
   }
-  nav.small li {
-    display:inline-block;
+  .menus h2,
+  .menu .nom,
+  .menu .prix {
+    font-size: 1.4rem;
   }
-  nav.small li a {
-    text-decoration: none;
-    font-family: 'BenchNine',sans-serif;
+  .menu .ingredients {
     font-size: 1.2rem;
-    margin: 1rem;
   }
+}
+
+
+
+
+
+.align-left {
+  float: left;
+}
+.align-right {
+  float: right;
 }
