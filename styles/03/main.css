@@ -158,6 +158,7 @@ section h1 {
 #home {
   /*background: none repeat scroll 0% 0% #a60000;*/
   background: url("../../img/image.jpeg") no-repeat fixed center center / cover transparent;
+  height: 884px;
 }
 #home p {
   color: #FFFFFF;
@@ -219,6 +220,25 @@ section h1 {
   position:relative;
   font-weight: bold;
 }
+
+
+
+#access {
+  background: url("../../img/image.jpeg") no-repeat fixed center center / cover transparent;
+  height: 743px;
+}
+#access p {
+  color: #FFFFFF;
+  background: none repeat scroll 0% 0% #a60000;
+  padding: 40px;
+  opacity: 0.8;
+  border: solid 1px #a60000;
+  border-radius: 10px;
+}
+#access article {
+  padding: 60px 20px;
+}
+
 
 footer {
   clear: both;
