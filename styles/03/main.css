@@ -158,7 +158,6 @@ section h1 {
 #home {
   /*background: none repeat scroll 0% 0% #a60000;*/
   background: url("../../img/image.jpeg") no-repeat fixed center center / cover transparent;
-  height: 884px;
 }
 #home p {
   color: #FFFFFF;
@@ -174,6 +173,7 @@ section h1 {
 
 #menus {
   background: none repeat scroll 0% 0% #ffffff;
+  height: 884px;
 }
 .menus {
   padding-left: 20px;
