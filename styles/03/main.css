@@ -74,7 +74,7 @@ header {
   width: 960px;
   /*height: 230px;*/
 /*  margin-left: 10px;*/
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   text-align: center;
 }
 header .sub-header {
@@ -97,6 +97,8 @@ header .text-header {
   /*padding-top: 88px;*/
   padding-left: 5%;
   text-align: left;
+  vertical-align: top;
+  padding-top: 75px;
 }
 header .text-header .text {
   font-size: 2rem;
@@ -146,49 +148,61 @@ nav {
 section article {
   max-width: 960px;
   margin: auto;
-  padding: 20px;
+  /*padding: 20px;*/
   text-align: justify;
 }
 section h1 {
   font-size: 2.5rem;
   color: #A60000;
   text-align: center;
+  padding-bottom: 20px;
+}
+section h2 {
+  color: #269926;
+  font-size: 1.3rem;
+}
+section h3 {
+  font-size: 1.1rem;
 }
 
 #home {
   /*background: none repeat scroll 0% 0% #a60000;*/
-  background: url("../../img/image.jpeg") no-repeat fixed center center / cover transparent;
+  /*background: url("../../img/image.jpeg") no-repeat fixed center center / cover transparent;*/
+  background: url("../../img/roulotte jardin.jpg") no-repeat fixed center center / cover transparent;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
-#home p {
-  color: #FFFFFF;
-  background: none repeat scroll 0% 0% #a60000;
+.container {
   padding: 40px;
-  opacity: 0.8;
-  border: solid 1px #a60000;
-  border-radius: 10px;
 }
 #home article {
-  padding: 60px 20px;
+  color: #000000;
+  background: none repeat scroll 0% 0% #FFFFFF;
+  opacity: 0.9;
+  border: solid 1px #FFFFFF;
+  border-radius: 10px;
+  /*padding: 60px 20px;*/
 }
 
 #menus {
   background: none repeat scroll 0% 0% #ffffff;
   height: 884px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .menus {
   padding-left: 20px;
   padding-right: 20px;
 }
-.menus h1, .menus h2 {
+.menus h2, .menus h3 {
   display:inline-block;
 }
-.menus h1 {
-  color:#269926;
-  font-size:1.3rem;
-}
 .menus h2 {
-  font-size: 1.1rem;
+/*  color:#269926;
+  font-size:1.3rem;*/
+  font-weight: bold;
 }
+
 .menu {
   width: 46%;
   min-width: 351px;
@@ -225,20 +239,51 @@ section h1 {
 
 #access {
   background: url("../../img/image.jpeg") no-repeat fixed center center / cover transparent;
-  height: 743px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+#access h1 {
+  padding-top: 40px;
 }
 #access p {
-  color: #FFFFFF;
-  background: none repeat scroll 0% 0% #a60000;
-  padding: 40px;
-  opacity: 0.8;
-  border: solid 1px #a60000;
-  border-radius: 10px;
+/*  color: #FFFFFF;
+  background: none repeat scroll 0% 0% #a60000;*/
+  color: #000000;
+  padding-bottom: 20px;
 }
-#access article {
-  padding: 60px 20px;
+#access p.subtext {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
+#access article {
+  height: 625px;
+  color: #000000;
+  background: none repeat scroll 0% 0% #FFFFFF;
+  opacity: 1;
+  border: solid 1px #FFFFFF;
+  border-radius: 10px;
+  opacity: 0.9;
+}
+#access h2 {
+  padding-bottom: 10px;
+}
+
+#access .texte,
+#access .carte {
+  max-width: 46%;
+}
+#access .texte {
+  padding-left: 40px;
+}
+#access .carte {
+  padding-right: 40px;
+  background: none repeat scroll 0% 0% #FFFFFF;
+}
+#access iframe {
+  width: 400px;
+  height: 400px;
+}
 
 footer {
   clear: both;
