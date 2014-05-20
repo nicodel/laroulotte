@@ -3,21 +3,55 @@
   
   <head>
     <meta charset="utf-8" />
+    <title>La Roulotte - Pizzas au feu de bois à Chamonix</title>
+    <script type="text/javascript">
+    var laRoulotte = function() {
+      /*
+       * Based on MDN exmaple of Window.onscroll: https://developer.mozilla.org/en-US/docs/Web/API/Window.onscroll#Example_3.3A_Showing_a_link_to_the_top_of_the_page_after_a_scroll
+       */
+      var appended = false, bookmark = document.createElement("div");
+      bookmark.id = "top";
+      // bookmark.innerHTML = "<a href=\"#\" title=\"Top of the page.\">&uarr;<\/a>";
+      bookmark.innerHTML = "<span class=\"titre\">La Roulotte </span><a class=\"tel\" href=\"tel:+33659566238\">+33 6 59 56 62 38</a>";
+      onscroll = function() {
+        var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (scrollTop > 222) {
+          if (!appended) {
+            // document.body.appendChild(bookmark);
+            document.body.insertBefore(bookmark, document.getElementById("header"));
+            appended = true;
+          }
+        } else {
+          if (appended) {
+            document.body.removeChild(bookmark);
+            appended = false;
+          }
+        }
+      };
+    }();
+
+
+    </script>
+
+
+
     <link rel="stylesheet" href="styles/03/reset.css" />
     <link rel="stylesheet" href="styles/03/main.css" />
-    <title>La Roulotte - Pizzas au feu de bois à Chamonix</title>
+  
+
+
   </head>
   
   <body>
     
-    <div class="top">
+<!--     <div class="top fixed">
       <p class="text">Pizzas au feu de bois à Chamonix</p>
       <span class="text"> - </span>
       <span class="titre">La Roulotte</span>
       <a class="tel" href="tel:+33659566238">+33 6 59 56 62 38</a>
-    </div>
+    </div> -->
 
-    <header>
+    <header id="header">
       <div class="sub-header">
         <a href="index.html">
           <img class="logo" src="img/logo_210.png" alt="logo" />
@@ -63,25 +97,25 @@
     
     <!-- <hr class="separateur vert" /> -->
 
-     <section id="home">
+     <section id="home" class="back-image">
       <article>
-      <div class="container">
+      <!-- <div class="container"> -->
         <p>A deux pas du centre ville de Chamonix, La Roulotte vous accueille dans un cadre pittoresque, reposant et gourmand sous l’œil bienveillant du massif du Brévent.
         <br /><br />Vous pourrez vous y détendre en savourant un large choix de
         <strong> pizzas cuites au feu de bois, salades et carpaccios </strong>, préparés essentiellement avec des
         <strong> produits frais </strong>et de
         <strong> saison </strong>par Damien qui se fera un plaisir de vous les servir sur la terrasse fleurie où vous pourrez déguster des boissons chaudes ou froides en contemplant la vue imprenable sur le plus beau massif des alpes.</p>
-      </div>
+      <!-- </div> -->
       </article>
     </section>
 
 
 
 
-    <section id="menus">
-    <h1>Nos Pizzas</h1>
+    <section id="menus"  class="back-white">
     <article class="menus">
-      <div class="menu align-left">
+    <h1 class="align-center">Nos Pizzas</h1>
+      <div class="menu float-left">
         <h2>PIZZE ROSSO</h2>
         <h3>(Base sauce tomate)</h3>
         <div class="plat">
@@ -160,7 +194,7 @@
           <div class="ingredients">tomate, mozzarella, chèvre, tomates cerises, roquette, noix, miel</div>
         </div>
       </div>
-      <div class="menu align-right">
+      <div class="menu float-right">
         <h2>PIZZE BIANCA</h2>
         <h3>(Base crème fraîche ou fromage)</h3>
         <div class="plat">
@@ -204,7 +238,7 @@
           <div class="ingredients">crème, mozzarella, oignons, tomates cerises, jambon cru, roquettte, basilic</div>
         </div>
       </div>
-      <div class="menu align-right big-top">
+      <div class="menu float-right big-top">
         <h2>PIZZE DOLCE</h2>
         <div class="plat">
           <span class="nom">Pizza au NUTELLA :</span>
@@ -212,7 +246,7 @@
           <div class="ingredients">Nutella, éclats de noisettes</div>
         </div>
       </div>
-      <div class="menu align-right big-top">
+      <div class="menu float-right big-top">
         <h2>ACCOMPAGNEMENTS</h2>
         <div class="plat">
           <span class="nom">Focaccia à l'ail</span>
@@ -230,7 +264,7 @@
           <div class="ingredients"></div>
         </div>
       </div>
-      <div class="menu align-right big-top">
+      <div class="menu float-right big-top">
         <div class="plat">
           <div class="ingredients">Ingrédients supplémentaires dès 1 €</div>
         </div>
@@ -238,11 +272,11 @@
     </article>
     </section>
 
-    <section id="access">
+    <section id="access"  class="back-image">
       <article>
-        <h1>Nous trouver</h1>
+        <h1 class="align-center">Nous trouver</h1>
         <p class="subtext">La Roulotte est située dans la rue Joseph Vallot au niveau de la résidence du Clos de Savoy.</p>
-        <div class="texte align-left">
+        <div class="texte float-left">
         <h2>Adresse :</h2>
         <p>390 rue Joseph Vallot, 74400 Chamonix-Mont-Blanc</p>
         <h2>Coordonnées GPS :</h2>
@@ -254,14 +288,13 @@
         <h2>S'y rendre à ski :</h2>
         <p>Téléski du Savoy Samaran.</p>
       </div>
-      <div class="carte align-right">
-      <!-- width="620" height="480" -->
-        <!-- <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?q=390+Rue+Joseph+Vallot+Chamonix-Mont-Blanc&amp;sll=45.926792,6.870209&amp;hl=fr&amp;ie=UTF8&amp;hq=&amp;hnear=390+Rue+Joseph+Vallot,+74400+Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926886,6.869802&amp;spn=0.014328,0.027466&amp;z=15&amp;output=embed"></iframe> -->
-        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?q=chamonix+la+roulotte&amp;oe=utf-8&amp;client=firefox-nightly&amp;channel=sb&amp;ie=UTF8&amp;hq=la+roulotte&amp;hnear=Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926581,6.870233&amp;spn=0.006345,0.006295&amp;output=embed"></iframe><br /><small><a href="https://maps.google.fr/maps?q=chamonix+la+roulotte&amp;oe=utf-8&amp;client=firefox-nightly&amp;channel=sb&amp;ie=UTF8&amp;hq=la+roulotte&amp;hnear=Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926581,6.870233&amp;spn=0.006345,0.006295&amp;source=embed" style="color:#0000FF;text-align:left">Agrandir le plan</a></small>
+      <div class="carte float-right">
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?q=chamonix+la+roulotte&amp;oe=utf-8&amp;client=firefox-nightly&amp;channel=sb&amp;ie=UTF8&amp;hq=la+roulotte&amp;hnear=Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926581,6.870233&amp;spn=0.006345,0.006295&amp;output=embed"></iframe>
         <br />
         <small>
-          <a href="https://maps.google.fr/maps?q=390+Rue+Joseph+Vallot+Chamonix-Mont-Blanc&amp;sll=45.926792,6.870209&amp;hl=fr&amp;ie=UTF8&amp;hq=&amp;hnear=390+Rue+Joseph+Vallot,+74400+Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926886,6.869802&amp;spn=0.014328,0.027466&amp;z=15&amp;source=embed" style="color:#0000FF;text-align:left">Agrandir le plan</a>
+          <a href="https://maps.google.fr/maps?q=chamonix+la+roulotte&amp;oe=utf-8&amp;client=firefox-nightly&amp;channel=sb&amp;ie=UTF8&amp;hq=la+roulotte&amp;hnear=Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926581,6.870233&amp;spn=0.006345,0.006295&amp;source=embed" style="color:#0000FF;text-align:left">Agrandir le plan</a>
         </small>
+        <br />
       </div>
 
       </article>
