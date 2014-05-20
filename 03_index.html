@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-  
   <head>
     <meta charset="utf-8" />
     <title>La Roulotte - Pizzas au feu de bois à Chamonix</title>
@@ -15,7 +14,8 @@
       bookmark.innerHTML = "<span class=\"titre\">La Roulotte </span><a class=\"tel\" href=\"tel:+33659566238\">+33 6 59 56 62 38</a>";
       onscroll = function() {
         var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-        if (scrollTop > 222) {
+        // console.log("scroll event detected! " + window.pageXOffset + " " + window.pageYOffset);
+        if (scrollTop > 203) {
           if (!appended) {
             // document.body.appendChild(bookmark);
             document.body.insertBefore(bookmark, document.getElementById("header"));
@@ -37,13 +37,10 @@
 
     <link rel="stylesheet" href="styles/03/reset.css" />
     <link rel="stylesheet" href="styles/03/main.css" />
-  
 
 
   </head>
-  
   <body>
-    
 <!--     <div class="top fixed">
       <p class="text">Pizzas au feu de bois à Chamonix</p>
       <span class="text"> - </span>
@@ -60,6 +57,7 @@
         </a>
       </div>
       <div class="text-header">
+        <p class="big">La Roulotte</p>
         <p class="text">Pizzas au feu de bois à Chamonix
           <br /><span class="small">Ouvert tous les jours midi et soir (sauf dimanche midi)</span>
           <br /><span class="small">Téléphone :
@@ -94,7 +92,7 @@
         </li>
       </ul>
     </nav>
-    
+
     <!-- <hr class="separateur vert" /> -->
 
      <section id="home" class="back-image">
@@ -113,163 +111,163 @@
 
 
     <section id="menus"  class="back-white">
-    <article class="menus">
-    <h1 class="align-center">Nos Pizzas</h1>
-      <div class="menu float-left">
-        <h2>PIZZE ROSSO</h2>
-        <h3>(Base sauce tomate)</h3>
-        <div class="plat">
-          <span class="nom">Margherita :</span>
-          <span class="prix">7,50 €</span>
-          <div class="ingredients">tomate, mozzarella, origan</div>
+      <article class="menus">
+        <h1 class="align-center">Nos Pizzas</h1>
+        <div class="menu float-left">
+          <h2>PIZZE ROSSO</h2>
+          <h3>(Base sauce tomate)</h3>
+          <div class="plat">
+            <span class="nom">Margherita :</span>
+            <span class="prix">7,50 €</span>
+            <div class="ingredients">tomate, mozzarella, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Toscana :</span>
+            <span class="prix">8,00 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Regina :</span>
+            <span class="prix">8,50 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon, champignons, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Napolitaine :</span>
+            <span class="prix">9,00 €</span>
+            <div class="ingredients">tomate, mozzarella, anchois, câpres, olives, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Calzone :</span>
+            <span class="prix">9,00 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon, oeuf, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Végétarienne :</span>
+            <span class="prix">11,00 €</span>
+            <div class="ingredients">tomate, mozzarella, oignons, champignons, légumes grillés, épinards, olives, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">4 fromages :</span>
+            <span class="prix">10,00 €</span>
+            <div class="ingredients">tomate, mozzarella, chèvre, parmesan, gorgonzola, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">4 Saisons :</span>
+            <span class="prix">9,50 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon , champignons, câpres, tomates cerises, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">La pizza Chaude :</span>
+            <span class="prix">9,00 €</span>
+            <div class="ingredients">tomate, mozzarella, salami piquant, piments, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Hawai :</span>
+            <span class="prix">9,50 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon, poivrons, ananas, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Romana :</span>
+            <span class="prix">12,00 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon cru , tomates cerises, roquette,crème de balsamique</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Valdostana :</span>
+            <span class="prix">9,00 €</span>
+            <div class="ingredients">tomate, mozzarella, lard fumé, oeuf, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Bacio :</span>
+            <span class="prix">9,50 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon , oignons, tomates cerises, crème, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Eleonora:</span>
+            <span class="prix">9,50 €</span>
+            <div class="ingredients">tomate, mozzarella, jambon , oignons, salami piquant, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Caprina rucola :</span>
+            <span class="prix">11,00 €</span>
+            <div class="ingredients">tomate, mozzarella, chèvre, tomates cerises, roquette, noix, miel</div>
+          </div>
         </div>
-        <div class="plat">
-          <span class="nom">Toscana :</span>
-          <span class="prix">8,00 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon, origan</div>
+        <div class="menu float-right">
+          <h2>PIZZE BIANCA</h2>
+          <h3>(Base crème fraîche ou fromage)</h3>
+          <div class="plat">
+            <span class="nom">Braccio di ferro :</span>
+            <span class="prix">9,00 €</span>
+            <div class="ingredients">crème, tome, épinards, jambon, tomates cerises, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Al tonno :</span>
+            <span class="prix">9,00 €</span>
+            <div class="ingredients">crème, oignons, thon, anchois, olives, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Salmon :</span>
+            <span class="prix">12,00 €</span>
+            <div class="ingredients">crème, mozzarella, oignons, saumon, tomates cerises, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Flammekueche :</span>
+            <span class="prix">8,00 €</span>
+            <div class="ingredients">crème, oignons, lard fumé, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Forestière :</span>
+            <span class="prix">9,50 €</span>
+            <div class="ingredients">crème, mozzarella,oignons, champignons, lard fumé, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Boutch :</span>
+            <span class="prix">10,00 €</span>
+            <div class="ingredients">crème, tome, oignons, lard fumé, reblochon , origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">La Mich' :</span>
+            <span class="prix">10,00 €</span>
+            <div class="ingredients">crème, chèvre, oignons, lard fumé, tomates cerises, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Parma :</span>
+            <span class="prix">12,00 €</span>
+            <div class="ingredients">crème, mozzarella, oignons, tomates cerises, jambon cru, roquettte, basilic</div>
+          </div>
         </div>
-        <div class="plat">
-          <span class="nom">Regina :</span>
-          <span class="prix">8,50 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon, champignons, origan</div>
+        <div class="menu float-right big-top">
+          <h2>PIZZE DOLCE</h2>
+          <div class="plat">
+            <span class="nom">Pizza au NUTELLA :</span>
+            <span class="prix">7,00 €</span>
+            <div class="ingredients">Nutella, éclats de noisettes</div>
+          </div>
         </div>
-        <div class="plat">
-          <span class="nom">Napolitaine :</span>
-          <span class="prix">9,00 €</span>
-          <div class="ingredients">tomate, mozzarella, anchois, câpres, olives, origan</div>
+        <div class="menu float-right big-top">
+          <h2>ACCOMPAGNEMENTS</h2>
+          <div class="plat">
+            <span class="nom">Focaccia à l'ail</span>
+            <span class="prix">4,00 €</span>
+            <div class="ingredients"></div>
+          </div>
+          <div class="plat">
+            <span class="nom">Salade de roquette et tomates cerises</span>
+            <span class="prix">3,00 €</span>
+            <div class="ingredients"></div>
+          </div>
+          <div class="plat">
+            <span class="nom">Boissons fraiches</span>
+            <span class="prix">2,00 €</span>
+            <div class="ingredients"></div>
+          </div>
         </div>
-        <div class="plat">
-          <span class="nom">Calzone :</span>
-          <span class="prix">9,00 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon, oeuf, origan</div>
+        <div class="menu float-right big-top">
+          <div class="plat">
+            <div class="ingredients">Ingrédients supplémentaires dès 1 €</div>
+          </div>
         </div>
-        <div class="plat">
-          <span class="nom">Végétarienne :</span>
-          <span class="prix">11,00 €</span>
-          <div class="ingredients">tomate, mozzarella, oignons, champignons, légumes grillés, épinards, olives, basilic</div>
-        </div>
-        <div class="plat">
-          <span class="nom">4 fromages :</span>
-          <span class="prix">10,00 €</span>
-          <div class="ingredients">tomate, mozzarella, chèvre, parmesan, gorgonzola, origan</div>
-        </div>
-        <div class="plat">
-          <span class="nom">4 Saisons :</span>
-          <span class="prix">9,50 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon , champignons, câpres, tomates cerises, origan</div>
-        </div>
-        <div class="plat">
-          <span class="nom">La pizza Chaude :</span>
-          <span class="prix">9,00 €</span>
-          <div class="ingredients">tomate, mozzarella, salami piquant, piments, persillade</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Hawai :</span>
-          <span class="prix">9,50 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon, poivrons, ananas, origan</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Romana :</span>
-          <span class="prix">12,00 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon cru , tomates cerises, roquette,crème de balsamique</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Valdostana :</span>
-          <span class="prix">9,00 €</span>
-          <div class="ingredients">tomate, mozzarella, lard fumé, oeuf, persillade</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Bacio :</span>
-          <span class="prix">9,50 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon , oignons, tomates cerises, crème, basilic</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Eleonora:</span>
-          <span class="prix">9,50 €</span>
-          <div class="ingredients">tomate, mozzarella, jambon , oignons, salami piquant, persillade</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Caprina rucola :</span>
-          <span class="prix">11,00 €</span>
-          <div class="ingredients">tomate, mozzarella, chèvre, tomates cerises, roquette, noix, miel</div>
-        </div>
-      </div>
-      <div class="menu float-right">
-        <h2>PIZZE BIANCA</h2>
-        <h3>(Base crème fraîche ou fromage)</h3>
-        <div class="plat">
-          <span class="nom">Braccio di ferro :</span>
-          <span class="prix">9,00 €</span>
-          <div class="ingredients">crème, tome, épinards, jambon, tomates cerises, persillade</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Al tonno :</span>
-          <span class="prix">9,00 €</span>
-          <div class="ingredients">crème, oignons, thon, anchois, olives, persillade</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Salmon :</span>
-          <span class="prix">12,00 €</span>
-          <div class="ingredients">crème, mozzarella, oignons, saumon, tomates cerises, basilic</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Flammekueche :</span>
-          <span class="prix">8,00 €</span>
-          <div class="ingredients">crème, oignons, lard fumé, origan</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Forestière :</span>
-          <span class="prix">9,50 €</span>
-          <div class="ingredients">crème, mozzarella,oignons, champignons, lard fumé, persillade</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Boutch :</span>
-          <span class="prix">10,00 €</span>
-          <div class="ingredients">crème, tome, oignons, lard fumé, reblochon , origan</div>
-        </div>
-        <div class="plat">
-          <span class="nom">La Mich' :</span>
-          <span class="prix">10,00 €</span>
-          <div class="ingredients">crème, chèvre, oignons, lard fumé, tomates cerises, basilic</div>
-        </div>
-        <div class="plat">
-          <span class="nom">Parma :</span>
-          <span class="prix">12,00 €</span>
-          <div class="ingredients">crème, mozzarella, oignons, tomates cerises, jambon cru, roquettte, basilic</div>
-        </div>
-      </div>
-      <div class="menu float-right big-top">
-        <h2>PIZZE DOLCE</h2>
-        <div class="plat">
-          <span class="nom">Pizza au NUTELLA :</span>
-          <span class="prix">7,00 €</span>
-          <div class="ingredients">Nutella, éclats de noisettes</div>
-        </div>
-      </div>
-      <div class="menu float-right big-top">
-        <h2>ACCOMPAGNEMENTS</h2>
-        <div class="plat">
-          <span class="nom">Focaccia à l'ail</span>
-          <span class="prix">4,00 €</span>
-          <div class="ingredients"></div>
-        </div>
-        <div class="plat">
-          <span class="nom">Salade de roquette et tomates cerises</span>
-          <span class="prix">3,00 €</span>
-          <div class="ingredients"></div>
-        </div>
-        <div class="plat">
-          <span class="nom">Boissons fraiches</span>
-          <span class="prix">2,00 €</span>
-          <div class="ingredients"></div>
-        </div>
-      </div>
-      <div class="menu float-right big-top">
-        <div class="plat">
-          <div class="ingredients">Ingrédients supplémentaires dès 1 €</div>
-        </div>
-      </div>
-    </article>
+      </article>
     </section>
 
     <section id="access"  class="back-image">
