@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'trebuchet ms', 'Maven Pro Regular', sans-serif;
+  font-family: /*'trebuchet ms', */'Maven Pro Regular', sans-serif;
 }
 
 p,
@@ -36,7 +36,10 @@ article {
   z-index: 10;
   overflow-y: auto;
 }
-
+strong {
+  color: #269926;
+  font-weight: bold;
+}
 #top {
   width: 100%;
   font-size: 1.3rem;
@@ -67,9 +70,9 @@ article {
   border-radius:8px;
 }
 
-header a {
+/*header a {
   text-decoration: none;
-}
+}*/
 header {
   margin-left: auto;
   margin-right: auto;
@@ -81,13 +84,13 @@ header .sub-header {
   display: inline-block;
   margin-top: 10px;
 }
-
+/*
 img.telephe {
   display: none;
 }
 img.panoramik {
   display: none;
-}
+}*/
 header .text-header {
   display: inline-block;
   padding-left: 5%;
@@ -104,11 +107,18 @@ header p.big {
 header .text-header .text .small {
   font-size: 1.5rem
 }
-
-
+header .langues {
+ display: inline-block;
+  vertical-align: top;
+  padding-top: 35px; 
+}
+img.flag {
+  border: 1px solid #269926;
+}
+/*
 nav {
   display: none;
-}
+}*/
 
 
 section.back-image {
@@ -139,6 +149,10 @@ section article h1 {
   color: #A60000;
   padding-bottom: 20px;
 }
+/*section article p.h12 {
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}*/
 section article h2 {
   color: #269926;
   font-size: 1.3rem;
@@ -156,7 +170,7 @@ section article h3 {
 
 
 #home {
-  background: url("../../img/roulotte jardin.jpg") no-repeat fixed center center / cover transparent;
+  background: url("../img/roulotte jardin.jpg") no-repeat fixed center center / cover transparent;
 }
 
 
@@ -167,7 +181,9 @@ section article h3 {
  */
 section#menus {
   background: none repeat scroll 0% 0% #ffffff;
-  height: 884px;
+  /* height: 884px; */
+  /* display: inline-block; */
+  text-align: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -182,9 +198,34 @@ article.menus h2 {
   font-weight: bold;
 }
 
-.menu {
+/*.menu {
   width: 46%;
   min-width: 351px;
+}*/
+/*.menu.left {
+  float: left;
+}
+.menu.right {
+  float: right;
+}*/
+#menus12 {
+  text-align: center;
+}
+#menus1,
+#menus2 {
+  /* min-width: 351px; */
+  width: 46%;
+  display: inline-block;
+  vertical-align: top;
+  /* For IE 7 */
+  zoom: 1;
+  *display: inline;
+}
+#menus1 {
+  padding-right: 20px;
+}
+#menus2 {
+  padding-left: 20px;
 }
 .menu.big-top {
   padding-top: 40px;
@@ -221,7 +262,7 @@ article.menus h2 {
  *
  */
 #access {
-  background: url("../../img/image.jpeg") no-repeat fixed center center / cover transparent;
+  background: url("../img/image.jpeg") no-repeat fixed center center / cover transparent;
 }
 #access article {
   height: 501px;
@@ -296,11 +337,24 @@ footer img {
     height: 70px;
   }
 
-  .menu.align-left,
-  .menu.align-right {
+  section#menus {
+    height: auto;
+  }
+  /*.menu,
+  .menu.left,
+  .menu.right {
     float: none;
+    width: 80%;
+    margin: auto;
     text-align: center;
-    width: 100%;
+  }*/
+  #menus1,
+  #menus2 {
+    width: 80%;
+    padding: 0;
+  }
+  #bianca {
+    padding-top: 40px;
   }
   .menus h1 {
     font-size: 1.7rem;

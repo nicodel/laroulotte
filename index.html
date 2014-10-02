@@ -1,19 +1,267 @@
 <!doctype html>
 <html>
-  
   <head>
     <meta charset="utf-8" />
-
-    <title>La Roulotte - Propositions</title>
+    <title data-l10n-id="titre">La Roulotte - Pizzas au feu de bois à Chamonix</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="prefetch" type="application/l10n" href="locales/locales.ini" />
   </head>
-  
   <body>
-    <h1>La Roulotte - Propositions</h1>
-    <ul>
-      <li><a href="01_index.html">01 - 1ère proposition</a></li>
-      <!-- <li><a href="02_index.html">02 &#45; 2ème proposition</a></li> -->
-      <li><a href="03_index.html">02 - 2ème proposition</a></li>
-    </ul>
-  </body>
+    <header id="header">
+      <div class="sub-header">
+        <img class="logo" src="img/logo_210.png" alt="logo" />
+      </div>
+      <div class="text-header">
+        <p class="big">La Roulotte</p>
+        <p data-l10n-id="pizzas-feu-bois" class="text">Pizzas au feu de bois à Chamonix</p>
+        <p data-l10n-id="heures-ouverture" class="small">Ouvert tous les jours midi (12h00 - 14h30) et soir (18h00 - 22h00)</p>
+        <p data-l10n-id="heures-fermeture">Fermé le mardi et le mercredi hors saison</p>
+        <p data-l10n-id="telephone" class="small">Téléphone :
+          <a class="tel" href="tel:+33659566238">+33 6 59 56 62 38</a></p>
+      </div>
+      <div class="langues">
+          <a href="#" id="localizeFR"><img class="flag" alt="fr-FR" src="img/fr.png"></a>
+          <a href="#" id="localizeEN"><img class="flag" alt="en-EN" src="img/eng.png"></a>
+      </div>
+    </header>
+
+     <section id="home" class="back-image">
+      <article>
+        <p data-l10n-id="pres-1">A deux pas du centre ville de Chamonix, sous l’œil bienveillant du massif du Brévent, La Roulotte vous accueille dans un cadre pittoresque et reposant.</p>
+        <br />
+        <p data-l10n-id="pres-2">Venez vous détendre en dégustant un large choix de pizzas cuites au feu de bois, de salades et de carpaccios  préparés essentiellement avec des <strong>produits frais</strong> et de <strong>saison</strong> par Damien.</p>
+        <br />
+        <p data-l10n-id="pres-3">Pour manger ou simplement boire un verre, vous apprécierez la terrasse fleurie et la vue imprenable sur le plus beau massif des alpes !</p>
+      </article>
+    </section>
+
+
+
+
+    <section id="menus"  class="back-white">
+      <article class="menus">
+      <h1 data-l10n-id="nos-pizzas" class="align-center">Nos Pizzas - Taille unique (33cm)</h1>
+        <!-- <p class="align&#45;center h12">Tous les mois, demandez notre nouvelle recette : la Pizza du mois !</p> -->
+        <div id="menus12">
+        <div id="menus1">
+        <div class="menu left">
+          <h2>PIZZE ROSSO</h2>
+          <h3 data-l10n-id="base-tomate">(Base sauce tomate)</h3>
+          <div class="plat">
+            <span class="nom">Margherita :</span>
+            <span class="prix">7,50 €</span>
+            <div data-l10n-id="ing-margarita" class="ingredients">tomate, mozzarella, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Toscana :</span>
+            <span class="prix">8,00 €</span>
+            <div data-l10n-id="ing-toscana" class="ingredients">tomate, mozzarella, jambon, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Regina :</span>
+            <span class="prix">8,50 €</span>
+            <div data-l10n-id="ing-regina" class="ingredients">tomate, mozzarella, jambon, champignons, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Napolitaine :</span>
+            <span class="prix">9,00 €</span>
+            <div data-l10n-id="ing-napolitaine" class="ingredients">tomate, mozzarella, anchois, câpres, olives, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Calzone :</span>
+            <span class="prix">9,00 €</span>
+            <div data-l10n-id="ing-calzone" class="ingredients">tomate, mozzarella, jambon, oeuf, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Végétarienne :</span>
+            <span class="prix">11,00 €</span>
+            <div data-l10n-id="ing-vegetarienne" class="ingredients">tomate, mozzarella, oignons, champignons, légumes grillés, épinards, olives, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">4 fromages :</span>
+            <span class="prix">10,00 €</span>
+            <div data-l10n-id="ing-4fromages" class="ingredients">tomate, mozzarella, chèvre, parmesan, gorgonzola, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">4 Saisons :</span>
+            <span class="prix">9,50 €</span>
+            <div data-l10n-id="ing-4saisons" class="ingredients">tomate, mozzarella, jambon , champignons, câpres, tomates cerises, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">La pizza Chaude :</span>
+            <span class="prix">9,00 €</span>
+            <div data-l10n-id="ing-pizza-chaude" class="ingredients">tomate, mozzarella, salami piquant, piments, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Hawai :</span>
+            <span class="prix">9,50 €</span>
+            <div data-l10n-id="ing-hawai" class="ingredients">tomate, mozzarella, jambon, poivrons, ananas, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Romana :</span>
+            <span class="prix">12,00 €</span>
+            <div data-l10n-id="ing-romana" class="ingredients">tomate, mozzarella, jambon cru , tomates cerises, roquette,crème de balsamique</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Valdostana :</span>
+            <span class="prix">9,00 €</span>
+            <div data-l10n-id="ing-valdostana" class="ingredients">tomate, mozzarella, lard fumé, oeuf, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Bacio :</span>
+            <span class="prix">9,50 €</span>
+            <div data-l10n-id="ing-bacio" class="ingredients">tomate, mozzarella, jambon , oignons, tomates cerises, crème, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Eleonora:</span>
+            <span class="prix">9,50 €</span>
+            <div data-l10n-id="ing-eleonora" class="ingredients">tomate, mozzarella, jambon , oignons, salami piquant, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Caprina rucola :</span>
+            <span class="prix">11,00 €</span>
+            <div data-l10n-id="ing-caprina" class="ingredients">tomate, mozzarella, chèvre, tomates cerises, roquette, noix, miel</div>
+          </div>
+        </div>
+      </div>
+      <div id="menus2">
+        <div id="bianca" class="menu right">
+          <h2>PIZZE BIANCA</h2>
+          <h3 data-l10n-id="base-creme">(Base crème fraîche ou fromage)</h3>
+          <div class="plat">
+            <span class="nom">Braccio di ferro :</span>
+            <span class="prix">9,00 €</span>
+            <div data-l10n-id="ing-braccio" class="ingredients">crème, tome, épinards, jambon, tomates cerises, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Al tonno :</span>
+            <span class="prix">9,00 €</span>
+            <div data-l10n-id="ing-al-tonno" class="ingredients">crème, oignons, thon, anchois, olives, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Salmon :</span>
+            <span class="prix">12,00 €</span>
+            <div data-l10n-id="ing-salmon" class="ingredients">crème, mozzarella, oignons, saumon, tomates cerises, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Flammekueche :</span>
+            <span class="prix">8,00 €</span>
+            <div data-l10n-id="ing-flammekueche" class="ingredients">crème, oignons, lard fumé, origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Forestière :</span>
+            <span class="prix">9,50 €</span>
+            <div data-l10n-id="ing-forestiere" class="ingredients">crème, mozzarella,oignons, champignons, lard fumé, persillade</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Boutch :</span>
+            <span class="prix">10,00 €</span>
+            <div data-l10n-id="ing-boutch" class="ingredients">crème, tome, oignons, lard fumé, reblochon , origan</div>
+          </div>
+          <div class="plat">
+            <span class="nom">La Mich' :</span>
+            <span class="prix">10,00 €</span>
+            <div data-l10n-id="ing-la-mich" class="ingredients">crème, chèvre, oignons, lard fumé, tomates cerises, basilic</div>
+          </div>
+          <div class="plat">
+            <span class="nom">Parma :</span>
+            <span class="prix">12,00 €</span>
+            <div data-l10n-id="ing-parma" class="ingredients">crème, mozzarella, oignons, tomates cerises, jambon cru, roquettte, basilic</div>
+          </div>
+        </div>
+        <div class="menu right big-top">
+          <h2>PIZZE DOLCE</h2>
+          <div class="plat">
+            <span data-l10n-id="nutella" class="nom">Pizza au NUTELLA :</span>
+            <span class="prix">7,00 €</span>
+            <div data-l10n-id="ing-nutella" class="ingredients">Nutella, éclats de noisettes</div>
+          </div>
+        </div>
+        <div class="menu right big-top">
+          <h2 data-l10n-id="accompagnements">ACCOMPAGNEMENTS</h2>
+          <div class="plat">
+            <span data-l10n-id="pain-ail" class="nom">Focaccia à l'ail</span>
+            <span class="prix">4,00 €</span>
+            <div class="ingredients"></div>
+          </div>
+          <div class="plat">
+            <span data-l10n-id="salade" class="nom">Salade de roquette et tomates cerises</span>
+            <span class="prix">4,00 €</span>
+            <div class="ingredients"></div>
+          </div>
+          <div class="plat">
+            <span data-l10n-id="boissons" class="nom">Boissons fraiches</span>
+            <span class="prix">2,00 €</span>
+            <div class="ingredients"></div>
+          </div>
+        </div>
+        <div class="menu float-right big-top">
+          <div class="plat">
+            <div data-l10n-id="ingredient-supp" class="ingredients">Ingrédients supplémentaires dès 1 €</div>
+          </div>
+        </div>
+        <div class="menu float-right big-top">
+          <div class="plat">
+            <div data-l10n-id="regelement" class="prix">tout règlement accepté sauf carte bleue !</div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      </article>
+    </section>
+
+    <section id="access"  class="back-image">
+      <article>
+        <h1 data-l10n-id="nous-trouver" class="align-center">Nous trouver</h1>
+        <p data-l10n-id="emplacement" class="subtext">La Roulotte est située dans la rue Joseph Vallot au niveau de la résidence du Clos de Savoy.</p>
+        <div class="texte float-left">
+        <h2 data-l10n-id="adresse">Adresse :</h2>
+        <p>390 rue Joseph Vallot, 74400 Chamonix-Mont-Blanc</p>
+        <h2 data-l10n-id="coordonnees-gps">Coordonnées GPS :</h2>
+        <p>45.927021,6.870378</p>
+        <h2 data-l10n-id="a-pied">S'y rendre à pied :</h2>
+        <p data-l10n-id="explication-a-pied">Rue Joseph Vallot en face de la résidence du Clos de Savoy.</p>
+        <h2 data-l10n-id="en-bus">S'y rendre en bus :</h2>
+        <p data-l10n-id="explication-en-bus">Arrêt Mummery - Place du Mont Blanc</p>
+        <h2 data-l10n-id="en-ski">S'y rendre à ski :</h2>
+        <p data-l10n-id="explication-en-ski">Téléski du Savoy Samaran.</p>
+      </div>
+      <div class="carte float-right">
+        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.fr/maps?q=chamonix+la+roulotte&amp;oe=utf-8&amp;client=firefox-nightly&amp;channel=sb&amp;ie=UTF8&amp;hq=la+roulotte&amp;hnear=Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926581,6.870233&amp;spn=0.006345,0.006295&amp;output=embed"></iframe>
+        <br />
+        <small>
+          <a href="https://maps.google.fr/maps?q=chamonix+la+roulotte&amp;oe=utf-8&amp;client=firefox-nightly&amp;channel=sb&amp;ie=UTF8&amp;hq=la+roulotte&amp;hnear=Chamonix-Mont-Blanc,+Haute-Savoie,+Rh%C3%B4ne-Alpes&amp;t=m&amp;ll=45.926581,6.870233&amp;spn=0.006345,0.006295&amp;source=embed" style="color:#0000FF;text-align:left">Agrandir le plan</a>
+        </small>
+        <br />
+      </div>
+
+      </article>
+    </section>
+
+   <footer>
+      <ul>
+        <li>
+          <img alt="La Roulotte" src="img/logo_128.png">
+        </li>
+        <li>Rue Joseph Vallot 74400<br />Chamonix-Mont-Blanc
+        </li>
+        <li>
+        <span data-l10n-id="telephone"></span><br /><a href="tel:+33659566238">+33 6 59 56 62 38</a>
+        </li>
+        <li>
+        <span data-l10n-id="heures-ouverture-short">Ouvert tous les jours midi & soir</span>
+        <br />
+        <span data-l10n-id="heures-fermeture-short">Fermé mardi et mercredi hors saison</span>
+        </li>
+        <li data-l10n-id="developper-par">coded by<br />
+          <a href="http://github.com/nicodel" id="developer">nicodel</a>
+        </li>
+      </ul>
+      </footer>
+      <script type="text/javascript" src="js/l10n.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
+ </body>
 
 </html>
