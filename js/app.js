@@ -29,6 +29,26 @@ var laRoulotte = function() {
   a.href = "tel:+33659566238";
   a.textContent = "+33 6 59 56 62 38";
   bookmark.appendChild(a);
+
+  var flags = document.createElement("span");
+  var a = document.createElement("a");
+  a.className = "flag";
+  a.id = "localizeFR";
+  var img = document.createElement("img");
+  img.src = "img/fr.png";
+  a.appendChild(img);
+  bookmark.appendChild(a);
+
+  var a = document.createElement("a");
+  a.className = "flag";
+  a.id = "localizeEN";
+  var img = document.createElement("img");
+  img.src = "img/eng.png";
+  a.appendChild(img);
+  bookmark.appendChild(a);
+ 
+
+
   onscroll = function() {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     // console.log("scroll event detected! " + window.pageXOffset + " " + window.pageYOffset);
