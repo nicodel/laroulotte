@@ -18,8 +18,10 @@ var laRoulotte = function() {
   var div = document.createElement("div");
   div.className = "sub-header";
   var img = document.createElement("img");
-  img.src = "img/logo_48.png";
-  img.alt = "Logo La Roulotte"
+  // img.src = "img/logo_48.png";
+  img.src = "img/logo_210.png";
+  img.alt = "Logo La Roulotte";
+  img.className = "logo-top";
   div.appendChild(img);
   bookmark.appendChild(div);
 
