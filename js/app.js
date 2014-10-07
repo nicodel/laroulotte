@@ -15,48 +15,72 @@ var laRoulotte = function() {
   bookmark.id = "top";
   // bookmark.innerHTML = "<a href=\"#\" title=\"Top of the page.\">&uarr;<\/a>";
   // bookmark.innerHTML = "<span class=\"titre\">La Roulotte </span><a class=\"tel\" href=\"tel:+33659566238\">+33 6 59 56 62 38</a>";
+  var div = document.createElement("div");
+  div.className = "sub-header";
   var img = document.createElement("img");
-  img.src = "img/logo_48.png/";
-  bookmark.appendChild(img);
+  img.src = "img/logo_48.png";
+  img.alt = "Logo La Roulotte"
+  div.appendChild(img);
+  bookmark.appendChild(div);
+
+  var div = document.createElement("div");
+  div.className = "text-header";
 
   var span = document.createElement("span");
   span.className = "titre";
   span.textContent = "La Roulotte";
-  bookmark.appendChild(span);
+  div.appendChild(span);
 
   var a = document.createElement("a");
   a.className = "tel";
   a.href = "tel:+33659566238";
   a.textContent = "+33 6 59 56 62 38";
-  bookmark.appendChild(a);
+  div.appendChild(a);
 
-  var flags = document.createElement("span");
+  bookmark.appendChild(div);
+
+  var langues = document.createElement("div");
+  langues.className = "langues";
   var a = document.createElement("a");
-  a.className = "flag";
-  a.id = "localizeFR";
+  a.href = "#";
+  a.id = "localizeFRT";
   var img = document.createElement("img");
   img.src = "img/fr.png";
+  img.className = "flag";
+  img.alt= "fr-FR";
   a.appendChild(img);
-  bookmark.appendChild(a);
+  langues.appendChild(a);
 
   var a = document.createElement("a");
-  a.className = "flag";
-  a.id = "localizeEN";
+  a.href = "#";
+  a.id = "localizeENT";
   var img = document.createElement("img");
+  img.className = "flag";
   img.src = "img/eng.png";
+  img.alt = "en-EN";
   a.appendChild(img);
-  bookmark.appendChild(a);
+  langues.appendChild(a);
+  bookmark.appendChild(langues);
  
 
 
   onscroll = function() {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     // console.log("scroll event detected! " + window.pageXOffset + " " + window.pageYOffset);
-    if (scrollTop > 203) {
+    if (scrollTop > 144) {
       if (!appended) {
         // document.body.appendChild(bookmark);
         document.body.insertBefore(bookmark, document.getElementById("header"));
         appended = true;
+  document.getElementById("localizeFRT").addEventListener("click", function() {
+    console.log("localizing to FR");
+    document.webL10n.setLanguage("fr");
+  });
+  
+  document.getElementById("localizeENT").addEventListener("click", function() {
+    console.log("localizing to EN");
+    document.webL10n.setLanguage("en");
+  });
       }
     } else {
       if (appended) {
@@ -75,12 +99,6 @@ var laRoulotte = function() {
     console.log("localizing to EN");
     document.webL10n.setLanguage("en");
   });
-
-
-
-
-
-
 
 }();
 
