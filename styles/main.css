@@ -109,7 +109,7 @@ img.panoramik {
 header .text-header,
 #top .text-header {
   display: inline-block;
-  padding-left: 5%;
+  /* padding-left: 5%; */
   text-align: left;
   width: 643px;
   vertical-align: top;
@@ -133,16 +133,18 @@ header .langues,
 #top .langues {
   display: inline-block;
   vertical-align: top;
-  width: 49px;
+  /* width: 49px; */
 }
 header .langues {
-  padding-top: 35px;
+  padding-top: 180px;
 }
 #top .langues {
   padding-top: 18.5px;
+  margin-left: 10px;
 }
 img.flag {
-  border: 1px solid #000000;
+  /* border: 1px solid #000000; */
+  width: 48px;
 }
 #top #localizeENT {
   padding-left: 5px;
@@ -202,7 +204,11 @@ section article h3 {
 
 
 #home {
-  background: url("../img/roulotte jardin.jpg") no-repeat fixed center center / cover transparent;
+  background: url("../img/roulotte jardin.jpg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
@@ -294,7 +300,11 @@ article.menus h2 {
  *
  */
 #access {
-  background: url("../img/image.jpeg") no-repeat fixed center center / cover transparent;
+  background: url("../img/image.jpeg") no-repeat fixed center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 #access article {
   height: 501px;
