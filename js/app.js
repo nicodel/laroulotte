@@ -69,7 +69,7 @@ var laRoulotte = function() {
   onscroll = function() {
     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     // console.log("scroll event detected! " + window.pageXOffset + " " + window.pageYOffset);
-    if (scrollTop > 144) {
+    if (scrollTop > 152) {
       if (!appended) {
         // document.body.appendChild(bookmark);
         document.body.insertBefore(bookmark, document.getElementById("header"));
