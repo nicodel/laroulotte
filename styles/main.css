@@ -307,7 +307,7 @@ article.menus h2 {
   background-size: cover;
 }
 #access article {
-  height: 501px;
+  height: 551px;
 }
 #access article p {
   padding-bottom: 20px;
@@ -319,7 +319,9 @@ article.menus h2 {
 #access .carte {
   max-width: 46%;
 }
-
+#access a img {
+  width: 150px;
+}
 /*
  *
  * ~ Section Pied de page
