@@ -135,11 +135,15 @@ header .langues,
   vertical-align: top;
   /* width: 49px; */
 }
+header .social {
+  padding-top: 10px;
+}
 header .langues {
-  padding-top: 180px;
+  padding-top: 150px;
+  padding-left: 10px;
 }
 #top .langues {
-  padding-top: 18.5px;
+  padding-top: 7px;
   margin-left: 10px;
 }
 img.flag {
