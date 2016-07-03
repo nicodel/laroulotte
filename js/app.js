@@ -62,6 +62,11 @@ var laRoulotte = function() {
   img.alt = "en-EN";
   a.appendChild(img);
   langues.appendChild(a);
+  var trip = document.createElement("div");
+  trip.id = "TA_socialButtonRate464";
+  trip.className = "TA_socialButtonRate social";
+  trip.innerHTML = '<ul id="BNIcQBROd" class="TA_links dHa3oKDjgy"><li id="qLyHq5C0" class="MrmILro"><a target="_blank" href="https://www.tripadvisor.fr/UserReviewEdit-g187261-d4084478-La_Roulotte-Chamonix_Haute_Savoie_Rhone_Alpes.html"><img src="http://www.tripadvisor.fr/img/cdsi/img2/branding/socialWidget/ollie_transparent-21691-2.png"/></a></li></ul>';
+  langues.appendChild(trip);
   bookmark.appendChild(langues);
  
 
