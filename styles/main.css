@@ -194,11 +194,13 @@ section article h1 {
 section article h2 {
   color: #269926;
   font-size: 1.3rem;
+  padding-bottom: 10px;
 }
 section article h3 {
+  color: #269926;
   font-size: 1.1rem;
+  padding-bottom: 10px;
 }
-
 
 /*
  *
@@ -232,11 +234,8 @@ section#menus {
 article.menus {
   padding: 0 20px 0 20px;
 }
-article.menus h2,
-article.menus h3 {
-  display:inline-block;
-}
 article.menus h2 {
+  display:inline-block;
   font-weight: bold;
 }
 
@@ -290,6 +289,11 @@ article.menus h2 {
   white-space:normal;
   border-bottom:1px solid #bcbcbc;
   padding-bottom: 2px;
+}
+.boisson {
+  font-size:1.1rem;
+  float:left;
+  position:relative;
 }
 .prix {
   font-size: 1.1rem;
@@ -416,8 +420,3 @@ footer img {
     font-size: 1.2rem;
   }
 }
-
-
-
-
-
